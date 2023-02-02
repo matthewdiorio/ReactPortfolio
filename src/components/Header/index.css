@@ -17,18 +17,18 @@
     display: flex;
     width: 100%;
 }
-.header .social-links{
+.header .gl{
     display: inline-block;
     padding: 0;
     margin: 0;
 }
-.header .social-links li:first-of-type{
+.header .gl li:first-of-type{
     margin-right: 1rem;
 }
-.header .social-links img{
+.header .gl img{
     width: 25px;
 }
-.header .social-links img:hover{
+.header .gl img:hover{
     -webkit-filter:invert(50%);
             filter:invert(50%);
 }
