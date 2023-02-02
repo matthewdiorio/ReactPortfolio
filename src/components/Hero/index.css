@@ -175,4 +175,10 @@
         max-width: 200px;
         margin-bottom: 2rem;
     }
+
+    .hero .animation .initial {
+        -webkit-animation: none;
+        animation: none;
+    
+    }
 }
