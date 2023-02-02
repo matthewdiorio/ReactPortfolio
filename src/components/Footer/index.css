@@ -4,6 +4,8 @@ footer {
 
 
 .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -13,7 +15,11 @@ footer {
 
 .footer .links {
     height: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
@@ -30,11 +36,13 @@ footer {
 
 .footer .social-links img {
     max-width: 25px;
-    filter: invert(100%)
+    -webkit-filter: invert(100%);
+            filter: invert(100%)
 }
 
 .footer .social-links img:hover {
-    filter: invert(50%);
+    -webkit-filter: invert(50%);
+            filter: invert(50%);
 }
 
 

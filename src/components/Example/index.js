@@ -133,9 +133,11 @@ export const Example = () => {
                     <Modal
                         isOpen={modalIsOpen}
                         onRequestClose={closeModal}
-                        contentLabel="Example Modal"
+                        contentLabel="Examples"
+                        className="modal-content"
+                        overlayClassName="modal-overlay"
                     >
-                        <button onClick={closeModal} className="close-button">close</button>
+                        <button onClick={closeModal} className="close-button"><span aria-hidden="true">&times;</span></button>
                         <h5>Other Highline Automotive pages created by me:*</h5>
                         <ul>
                             <li>

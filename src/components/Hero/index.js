@@ -10,9 +10,15 @@ export const Hero = () => {
                         <img src="/img/profile.jpg" alt="Profile of Matthew Diorio" />
                     </div>
                     <div className="col-md-7 content">
-                        <h1 className="typed">Hello, my name is Matthew Diorio.</h1>
-                        <p>A Full-Stack Developer</p>
-        
+                        <div class="animation">
+                            <h2>&#60;/&#62;</h2>
+                            <h1>
+                                <span className="initial">Hello</span>
+                                <div class="reveal-container"><span className="reveal">, my name is Matthew Diorio.</span>
+                                </div>
+                            </h1>
+                            <div class="reveal-container"><p className="reveal-sub">A Full-Stack Developer</p></div>
+                        </div>
                     </div>
                 </div>
             </div>

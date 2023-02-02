@@ -3,7 +3,8 @@
 }
 
 .example .slide-container {
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .example .image-wrapper {
@@ -23,23 +24,46 @@
     width: 100%;
 }
 
-
-
 .example .react-slideshow-container .default-nav {
     background: none !important;
 }
 
-.ReactModal__Overlay {
-    z-index: 99;
-    background-color: rgba(000, 000, 000, 0.75) !important;
-}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    border-radius: 4px;
+    max-width: 900px;
+    max-height: 95vh;
+    padding: 3rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
 
-.ReactModal__Content.ReactModal__Content--after-open {
-    position: relative;
-    max-width: 700px;
-
-    margin: auto;
-}
+  .modal-content ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+  }
 
 .ReactModal__Content.ReactModal__Content--after-open ul {
     margin: 2rem 0;
@@ -64,7 +88,10 @@
     background-color: #fff;
     border: none;
     border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -73,13 +100,18 @@
   
 .example button.screen-button:hover {
     background-color: #0e2a48;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
     color: #fff;
-    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
   
 .example button.screen-button {
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
 
 @media screen and (min-width: 1150px){
@@ -90,4 +122,9 @@
         right: -50px !important;
     }
 
+}
+@media screen and (max-width: 992px){
+    .example button.screen-button:hover {
+        background-color: none;
+      }
 }

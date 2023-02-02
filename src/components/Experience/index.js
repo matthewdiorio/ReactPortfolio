@@ -56,7 +56,7 @@ export const Experience = () => {
                     </article>
                 </div>
             </div>
-        </section >
+        </section>
     )
 
 }

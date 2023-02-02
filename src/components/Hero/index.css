@@ -1,5 +1,7 @@
 .hero {
     height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
@@ -8,13 +10,60 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .hero .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
+}
+
+.hero .content .animation {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.hero .animation .initial {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    -webkit-animation: pulse 1s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+    animation: pulse 1s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+
+}
+
+.hero .animation .reveal-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.hero .animation .reveal {
+    z-index: -1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-animation: reveal 1.5s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+    animation: reveal 1.5s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+}
+
+.hero .animation .reveal-sub {
+    -webkit-transform: translateY(300%);
+    -ms-transform: translateY(300%);
+    transform: translateY(300%);
+    -webkit-animation: slide 1.5s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+    animation: slide 1.5s forwards cubic-bezier(0.8, 0.125, 0.15, 0.9);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .hero img {
@@ -25,6 +74,97 @@
     display: block;
 }
 
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes reveal {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    60% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes reveal {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    60% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    from {
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    from {
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
 
 @media screen and (max-width: 768px) {
     .hero {
