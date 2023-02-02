@@ -1,0 +1,93 @@
+.example {
+    background-color: #eee;
+}
+
+.example .slide-container {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.example .image-wrapper {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%
+}
+
+.example .image-wrapper .image {
+    background-image: url('http://via.placeholder.com/1900x1000');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.example .react-slideshow-container .default-nav {
+    background: none !important;
+}
+
+.ReactModal__Overlay {
+    z-index: 99;
+    background-color: rgba(000, 000, 000, 0.75) !important;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+    position: relative;
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open ul {
+    margin: 2rem 0;
+}
+
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    margin: 0.25rem;
+}
+
+.example button.screen-button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin:auto;
+  }
+  
+.example button.screen-button:hover {
+    background-color: #0e2a48;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+.example button.screen-button {
+    transform: translateY(-1px);
+  }
+
+@media screen and (min-width: 1150px){
+    .react-slideshow-container .nav:first-of-type {
+        left: -50px !important;
+    }
+    .react-slideshow-container .default-nav:last-of-type {
+        right: -50px !important;
+    }
+
+}

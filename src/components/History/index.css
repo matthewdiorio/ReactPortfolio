@@ -1,0 +1,24 @@
+.history {
+    background-color: var(--accent);
+    color: var(--accent-text);
+}
+
+.history p {
+    text-align: justify;
+}
+
+ul.skills {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    background-color: #17406c;
+
+}

@@ -1,0 +1,106 @@
+.timeline.position-relative {
+    max-width: 75%;
+    margin-left: auto;
+}
+
+.company-logo {
+    max-width: 150px;
+    position: absolute;
+    left: -12.5rem;
+}
+
+.company-logo.fz {
+    max-width: 90px;
+    left: -11.25rem
+}
+
+.company-logo.qms {
+    max-width: 100px;
+    left: -11.25rem
+}
+
+.section-title {
+    font-size: 1.25rem;
+    position: relative;
+
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #202225;
+}
+
+
+.timeline {
+    padding-left: 2rem;
+}
+
+.timeline:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: #aab4c3;
+    left: 6px;
+    top: 4px;
+    position: absolute;
+}
+
+.timeline-item:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid #58677c;
+    background: white;
+    border-radius: 50%;
+}
+
+.progress {
+    height: 0.6rem;
+}
+
+.company-name {
+    color: #383838;
+    
+    font-weight: 500;
+    margin: 0
+}
+
+.experience .time {
+    color: #545454;
+}
+
+.position-title {
+    font-size: 1.25rem;
+    color: #434E5E;
+}
+
+.timeline-item-desc-heading {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 629px) {
+    .company-logo {
+        max-width: 20vw;
+        left: -28vw;
+    }
+    
+    .company-logo.fz {
+        max-width: 14vw;
+        left: -26vw;
+    }
+    
+    .company-logo.qms {
+        max-width: 15vw;
+        left: -26vw;
+    }
+}
