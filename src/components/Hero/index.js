@@ -13,8 +13,8 @@ export const Hero = () => {
                         <div class="animation">
                             <h2>&#60;/&#62;</h2>
                             <h1>
-                                <span className="initial">Hello</span>
-                                <div class="reveal-container"><span className="reveal">, my name is Matthew Diorio.</span>
+                                <span className="initial">Hello.&nbsp;</span>
+                                <div class="reveal-container"><span className="reveal">My name is Matthew Diorio.</span>
                                 </div>
                             </h1>
                             <div class="reveal-container"><p className="reveal-sub">A Full-Stack Developer</p></div>

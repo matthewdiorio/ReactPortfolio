@@ -28,7 +28,6 @@
 .hero .content .animation {
     display: inline-block;
     overflow: hidden;
-
 }
 
 .hero .animation .initial {
@@ -78,16 +77,19 @@
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
+        margin-left:0;
     }
 
     50% {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        margin-left:0.25rem
     }
 
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
+        margin-left: 0rem;
     }
 }
 
@@ -95,16 +97,19 @@
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
+        margin-left: 0rem;
     }
 
     50% {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        margin-left: 0.25rem;
     }
 
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
+        margin-left: 0rem;
     }
 }
 
@@ -176,9 +181,4 @@
         margin-bottom: 2rem;
     }
 
-    .hero .animation .initial {
-        -webkit-animation: none;
-        animation: none;
-    
-    }
 }
