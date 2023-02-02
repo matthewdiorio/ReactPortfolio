@@ -12,29 +12,23 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
-.header .gl{
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-.header .gl li:first-of-type{
-    margin-right: 1rem;
-}
-.header .gl img{
+
+.header img{
     width: 25px;
 }
 .header .gl img:hover{
     -webkit-filter:invert(50%);
             filter:invert(50%);
 }
-.header .nav{
-    margin-left: auto;
-}
+
 .header .nav a{
     text-decoration: none;
     color: #000
