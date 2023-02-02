@@ -10,6 +10,7 @@ export const Header = () => {
                         <li><a href="https://www.linkedin.com/in/matthewdiorio" aria-label="linked-in">linkedin</a></li>
                         <li><a href="https://www.github.com/matthewdiorio" aria-label="Github">github</a></li>
                     </ul>
+                    
                     <ul className="nav">
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#examples">Designs</a> </li>
