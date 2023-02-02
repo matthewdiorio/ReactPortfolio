@@ -113,7 +113,9 @@
         -ms-transform: translateY(-1px);
             transform: translateY(-1px);
   }
-
+.disclaimer{
+    overflow: scroll;
+}
 @media screen and (min-width: 1150px){
     .react-slideshow-container .nav:first-of-type {
         left: -50px !important;
@@ -127,4 +129,7 @@
     .example button.screen-button:hover {
         background-color: none;
       }
+    .disclaimer{
+        max-height: 40vh;
+    }
 }
