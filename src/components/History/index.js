@@ -18,6 +18,7 @@ export const History = () => {
                             <li>Javascript</li>
                             <li>React</li>
                             <li>Node.js</li>
+                            <li>C#</li>
                             <li>PHP</li>
                             <li>SQL</li>
                             <li>MongoDB</li>
