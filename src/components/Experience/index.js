@@ -12,7 +12,7 @@ export const Experience = () => {
                         <div className="timeline-item-header mb-2">
                             <h3 className="position-title font-weight-bold">Application Systems Senior Analyst</h3>
                             <p className='company-name'>Goodyear Rubber and Tire Company</p>
-                            <p className="time">June 2021 — January 2023</p>
+                            <p className="time">June 2022 — January 2023</p>
                         </div>
                         <ul>
                             <li>Developed React components on an existing data visualization tool for tire characteristics used by tire engineers. Added to their existing C# .NET API to feed data into the React component.</li>
